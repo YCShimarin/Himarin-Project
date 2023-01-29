@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #e1e3e6;
+    color: #e1e3e6;
+}
+header{
+    width: 100%;
+    min-height: 20rem;
+    /* background-color: #98A8F8; */
+    display:inline-block;
+    background: linear-gradient(45deg,rgb(2, 6, 20) 8%, #98A8F8 50%);
+    background-size: 400% 400%;
+    background-repeat: no-repeat;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+}
+header:hover{
+    -webkit-animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;     
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+header .upper-head{
+    margin: 5rem 7rem; 
+    text-align: center;
+    text-shadow: 1px 1px 3px #222831;
+    color: #EEEEEE;
+    min-height: 80%;
+}
+header .upper-head h1{
+    font-style: italic;
+    font-size: 2.5rem;
+}
+header .upper-head span{
+    font-weight: bold;
+    font-style: italic;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    z-index:10;
+    padding: 2rem 2rem;
+    border-top: 2px dashed #FAF7F0;
+    background-color: #7286D3;
+    position: sticky;
+    top: 0;
+}
+header nav .logo{
+    float:left;
+}
+header nav ul a{
+    padding: 1rem;
+    text-align: center;
+    color: #EEEEEE;
+    text-decoration: none;
+    font-weight:500;
+}
+header nav ul a:hover{
+    background-color:#EEEEEE;
+    color: #7286D3;
+}
+header nav ul .logo p{
+    text-shadow: 1px 1px 2px #222831;
+    color: #e1e3e6;
+}
+header nav .logo span{
+    color: #FFF6BF;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-style: italic;
+}
+header nav .logo span:hover{
+    color: #7286D3;
+    background-color: #EEEEEE;
+    transition: 0.2s;
+    padding:0.5rem;
+    border-radius: 80px 0 80px 0;
+}
+main .content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+main .content article{
+    flex:3;
+    order: 1;
+}
+main .content aside{
+    flex: 1;
+    order: 2;
+    margin: 2rem 1rem;
+    border: 3px dashed #222831;
+    padding: 1rem;
+    color:#222831;
+    border-radius: 30px;
+    box-shadow: 1px 0px 5px #222831;
+}
+main .content aside h2
+{
+    text-align: center;
+    
+}
+main .content aside img{
+    float:center;
+}
+img {
+    width: 15rem;
+    padding: 5px;
+    margin: 1rem 0;
+    background-color:#7286D3;
+    border-radius: 80%;
+}
+main h1.home,
+.work{
+    text-align: center;
+    padding: 2rem;
+    color:#222831;
+}
+main .content article{
+    margin: 2rem 1rem 2rem 0;
+    border-top: 3px dashed #222831;
+    border-bottom: 3px dashed #222831;
+    border-right: 3px dashed #222831;
+    padding: 1rem;
+    border-radius: 0px 30px 30px 0px;
+}
+main .home span{
+    color: #7286D3;
+    font-style: italic;
+    text-shadow:1px 1px 1px #222831;
+}
+.content article{
+    background: linear-gradient(45deg,#7286D3 50%, #98a8f8 50%);
+    color:#EEEEEE;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+.content article h3{
+    text-align: right;
+    padding: 1rem;
+    border : 1px solid #222831;
+    margin-right: -1.2rem; 
+    margin-bottom: 0.5rem;
+    border-radius: 2px 0px 0px 100px;
+    background-color:#FFF6BF;
+    box-shadow: -1px 1px 5px #222831;
+}
+.content article h3 a{
+    text-decoration: none;
+    color:#222831;
+}
+.content article h3:active{
+    background-color:#98a8f8;
+    transition: 0.2s;
+}
+.content article h3 a:active{
+    color: #EEEEEE;
+}
+/* card part */
+.container-article{
+    display: flex;
+    max-width: 100%;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    color: #e1e3e6;
+}
+.card{
+    background: linear-gradient(45deg,#343e4d 50%, #98a8f8 50%);
+    border:2px solid #000000;
+    border-radius:10px;
+    margin:1rem;
+    box-shadow: 1px 1px 3px #000000;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: ease-in 0.2s;
+}
+.card .header-card .img{
+    background: none;
+}
+.container-article .card .content-2 h3 a{
+    color : #EEEEEE;
+    text-decoration: none;
+    margin: 1rem;
+    border-left: 3px dashed #7286D3;
+    border-right: 3px dashed #7286D3;
+    border-top: 3px dashed #7286D3;
+    padding: 0.9rem;
+    border-radius: 10px 10px 0 0;
+}
+.container-article .card .content-2 h3 a:hover{
+    padding: 0.9rem;
+    background-color:#98A8F8;
+    border-radius: 10px 10px 0 0;
+    color:#222831;
+}
+.container-article .card .header-card img{
+    border-radius: 0;
+    background-color: none;
+}
+
+/* Contact */
+.kartu-nama{
+    width: 70%;
+    background: linear-gradient(45deg,#FFF6BF 50%, #98a8f8 50%);
+    display:flex;
+    margin: auto;
+    justify-content:space-around;
+    padding: 2rem;
+    border-radius: 20px;
+    border: 2px dashed #222831;
+    font-weight: bold;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 3px #222831;
+
+}
+.kartu-nama table tr td,
+.kartu-nama h3{
+    color: #222831;
+}
+.kartu-nama table tr td a{
+    margin:0.3rem;
+}
+.kartu-nama table tr td a{
+    color:#222831;
+    text-decoration: none;
+}
+.kartu-nama table tr td a:hover{
+    color:#343e4d;
+    padding: 0.4rem;
+    border-radius: 30px;
+}
+.container-map{
+    width: 70%;
+    background: linear-gradient(45deg,#98a8f8 82%, #FFF6BF 20%);
+    margin: 1rem auto;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 1px 1px 3px #222831;
+}
+.container-map h2{
+    text-align: center;
+    padding:0.3rem;
+}
+iframe{
+    width: 98%;
+    height: 400px;
+    margin-left: 1%;
+    border-radius: 10px;
+}
+footer{
+    text-align: center;
+    background-color:#55637a;
+    width: 100%;
+    position: absolute;
+}
+.line-div{
+    width: 100%;
+    min-height: 40px;
+    background-color:#7286D3;
+    margin: 1rem auto;
+    box-shadow: 1px 1px 3px #222831
+}
+.credit-div{
+    margin: 2rem 0 0 0;
+    padding-bottom: 3rem;
+    text-decoration: none;
+    color:#e1e3e6;
+}
+.credit-div span {
+    font-weight:bold;
+}
+.credit-div a{
+    text-decoration: none;
+    color:#e1e3e6;
+}
+.credit-div a:hover{
+    color: #98a8f8;
+}
+.credit-div .sources{
+    padding-top:1rem;
+}
+
+
+
+
+@media(max-width: 810px){
+    body{
+        font-size: 0.8rem;
+    }
+    hr{
+        border: 2px #222831;
+    }
+    .kartu-nama h3{
+        padding: 1rem 0;
+    }
+    .kartu-nama h3::after{
+        content: " ------"
+    }
+    .kartu-nama h3::before{
+        content: "------ "
+    }
+
+}
+
+@media(max-width: 600px){
+    body{
+        font-size: 0.68rem;
+    }
+}
